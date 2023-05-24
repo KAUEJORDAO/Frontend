@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .metododepagamentomenu{
+            width: 100%;
+            height: 100%;
+            position: fixed;        
+            top: 0;
+            left: 0;
+            z-index: 1;
+            display: flex;
+            
+            
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0.541);
+        }
+
+        .metododepagamentomenu div{
+            background-color: white;
+        }
+        .metododepagamentomenu > div{
+            border: 1px solid black;
+            width: 50%;
+            height: auto;
+            padding-bottom: 10%;
+        }
+        .metododepagamentomenu > div > div{
+            border: 1px solid black;
+            padding: 15px 50px 15px 10px;
+        }
+        .pagarcomcartao{
+            display: none;
+        }
+        .pagarcomcartao>div{
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .pagarcomcartao>div{
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .pagarcomcartao>div>div{
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+        .metododepagamentomenu input{
+            padding: 10px;
+        }
+
+        .pagarcomcartaoabrir{
+            display: block;
+        }
+
+        .pagarcomboletopix{
+            display: none;
+        }
+        .pagarcomboletopix>div{
+            padding: 10px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .pagarcomboletopix>div{
+            display: flex;
+            flex-direction: row;
+        }
+        
+        .pagarcomboletopix>div>div{
+            display: flex;
+            flex-direction: column;
+            margin-left: 30px;
+        }
+        .metododepagamentomenu input{
+            padding: 10px;
+        }
+        .pagarcomboletopixabrir{
+            display: block;
+        }
+        .bolinha{
+            display: flex;
+            justify-content: row;
+        }
+        .bolinha>div{
+            border: 1px solid black;
+            border-radius: 100%;
+            padding: 10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <section class="metododepagamentomenu">
+            <div>
+                <div>
+                    <h3>Formas de pagamento</h3>
+                </div>
+                    <div class="bolinha" onclick="pagarComCartaoAbrir()">
+                        <div></div>
+                        <h3>Cartoes de credito e debito</h3>
+                    </div>
+                <div class="pagarcomcartao">
+                    <div>
+                        <div>
+                            <label for="">Número do cartão</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div>
+                            <label for="">Data de Validade</label>
+                            <input type="text" name="" id="" placeholder="MM/AA">
+                        </div>
+                        <div>
+                            <label for="">Cod. de Segurança</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">Nome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div>
+                            <label for="">Sobrenome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">CPF/CNPJ</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="bolinha" onclick="pagarComBoletoPixAbrir()">
+                    <div></div>
+                    <h3>Boleto/pix</h3>
+                </div>
+                <div class="pagarcomboletopix">
+                    <div>
+                        <div>
+                            <label for="">Nome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                        <div>
+                            <label for="">Sobrenome</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">CPF/CNPJ</label>
+                            <input type="text" name="" id="">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">Enviar boleto/pix para meu email  </label>
+                            <input type="text" name="" id="" placeholder="Digite seu endereço de e-mail">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
